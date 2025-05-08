@@ -14,7 +14,7 @@
   <script>
     async function loadMemes() {
       try {
-        const response = await fetch('/.netlify/functions/meme');
+        const response = await fetch('/.netlify/functions/meme.js');
         if (!response.ok) {
           throw new Error('Network response was not ok');
         }
